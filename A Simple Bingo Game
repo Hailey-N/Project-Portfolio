@@ -1,0 +1,17 @@
+###A Numbers (Bingo) Game
+
+newnumber <- function (guess) {
+  n_number <- sample(1:100, 1)
+  print(n_number)
+  if (guess == n_number) 
+    print('Bingo! :)')
+  else if (abs(guess - n_number) < 10) 
+    print ('Close, but not quite!')
+  else if (guess > n_number) 
+    print("Lower")
+  else print("Higher")
+}
+
+set.seed(1)
+#Enter your guess below (within the parenthesis!)
+newnumber()
